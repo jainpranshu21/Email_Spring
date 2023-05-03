@@ -34,13 +34,14 @@ public class Workspace extends Gmail{
               return o1.getEndTime().compareTo(o2.getEndTime());
           }
       });
-
-      LocalTime endTime=calendar.get(0).getEndTime();
-      for(int i=1;i<calendar.size();i++){
-          LocalTime startTime=calendar.get(i).getStartTime();
-          if(startTime.compareTo(endTime)>0){
-              count++;
-              endTime=calendar.get(i).getEndTime();
+      if(calendar.size()>0) {
+          LocalTime endTime = calendar.get(0).getEndTime();
+          for (int i = 1; i < calendar.size(); i++) {
+              LocalTime startTime = calendar.get(i).getStartTime();
+              if (startTime.compareTo(endTime) > 0) {
+                  count++;
+                  endTime = calendar.get(i).getEndTime();
+              }
           }
       }
 
