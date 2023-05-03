@@ -14,7 +14,7 @@ public class Workspace extends Gmail{
     public Workspace(String emailId) {
         // The inboxCapacity is equal to the maximum value an integer can store.
        super(emailId,Integer.MAX_VALUE);
-       calendar=new ArrayList<>();
+       this.calendar=new ArrayList<>();
     }
 
     public void addMeeting(Meeting meeting){

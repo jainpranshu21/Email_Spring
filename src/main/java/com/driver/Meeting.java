@@ -18,4 +18,12 @@ public class Meeting {
     public LocalTime getEndTime() {
         return endTime;
     }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
 }

@@ -43,6 +43,7 @@ public class Gmail extends Email {
              if (mail.getMessage().equals(message)) {
                  inbox.remove(mail);
                  trash.add(mail);
+                 break;
              }
          }
     }
