@@ -7,6 +7,9 @@ public class Mail {
     private String sender;
     private String message;
 
+    public Mail() {
+    }
+
     public Mail(Date date, String sender, String message) {
         this.date = date;
         this.sender = sender;

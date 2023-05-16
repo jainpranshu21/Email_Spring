@@ -35,10 +35,16 @@ public class Email {
                     else if(Character.isDigit(ch))d++;
                     else sc++;
                 }
-                if(uc>0 && lc>0 && d>0 && sc>0)
-                    password=newPassword;
+                if(uc>0 && lc>0 && d>0 && sc>0) {
+                    this.password = newPassword;
+                    System.out.println("Password changed successfully");
+                }
+                else
+                    System.out.println("New password is not valid");
             }
         }
+        else
+            System.out.println("Password doesn't match");
 
     }
 }
